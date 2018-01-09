@@ -56,8 +56,8 @@ class PropertyInfoViewController: UIViewController, UITableViewDelegate, UITable
         
         
         cell.usernameLabel.text = self.nameArray[indexPath.row]
-        
-        
+        cell.clickMeBt.addTarget(self, action: #selector(PropertyInfoViewController.getContentOfUser(_:)), for: .touchUpInside)
+
         return cell
     }
     
@@ -72,6 +72,10 @@ class PropertyInfoViewController: UIViewController, UITableViewDelegate, UITable
         
     }
 
+    
+    @objc func getContentOfUser(_ sender : Any){
+        
+    }
 
     
     /*
