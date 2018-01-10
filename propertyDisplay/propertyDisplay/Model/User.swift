@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+
+class User: NSObject {
+    var name : String = ""
+    var gender : String = ""
+    var hobby : String = ""
+    
+    override init() {
+        
+    }
+}

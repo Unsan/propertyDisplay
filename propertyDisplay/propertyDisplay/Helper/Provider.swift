@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Provider {
+    
+    static let sharedInstance = Provider()
+    
+    var ifLogin : Bool = false
+    
+}

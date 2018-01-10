@@ -79,6 +79,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="0.59999999999999998" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ehu-qN-rzI" firstAttribute="trailing" secondItem="hZC-6s-U5A" secondAttribute="trailing" id="Asw-Zw-gbw"/>
                             <constraint firstItem="Ehu-qN-rzI" firstAttribute="bottom" secondItem="hZC-6s-U5A" secondAttribute="bottom" id="ZH6-gB-kbC"/>
@@ -98,7 +99,6 @@
         <!--Navigation Controller-->
         <scene sceneID="bsU-KX-Iw5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WrX-0z-3hq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FkV-nS-Wmn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vrk-4Q-fM5">
@@ -110,6 +110,7 @@
                         <segue destination="fgU-IQ-5Us" kind="relationship" relationship="rootViewController" id="jJu-Yc-S6a"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WrX-0z-3hq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-84" y="36"/>
         </scene>
