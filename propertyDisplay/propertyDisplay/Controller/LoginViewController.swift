@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -14,8 +15,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = Constants.systemColor
         // Do any additional setup after loading the view.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        SVProgressHUD.show(withStatus: "App Start.....")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,9 +30,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func gotoLogin(_ sender: Any) {
         
-//        if usernameTF.text == "Unsan"{
-            self.performSegue(withIdentifier: "showDetail", sender: self)
-//        }
+        Tools.checkNetwork(context: self)
+        self.performSegue(withIdentifier: "showDetail", sender: self)
+        Provider.sharedInstance.ifLogin = true
         
     }
     

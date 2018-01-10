@@ -14,12 +14,13 @@ class PropertyInfoViewController: UIViewController, UITableViewDelegate, UITable
     
     var nameArray : [String] = ["Ann", "Unsan"]
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mTableView.register(UINib(nibName: "FirstTableViewCell", bundle: nil), forCellReuseIdentifier: "FirstTableViewCell")
         mTableView.tableFooterView = UIView(frame: CGRect.zero)
-
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +29,7 @@ class PropertyInfoViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     /*
-     // MARK: - tableView functions
+      MARK: - tableView functions
      
      
      */
@@ -74,7 +75,10 @@ class PropertyInfoViewController: UIViewController, UITableViewDelegate, UITable
 
     
     @objc func getContentOfUser(_ sender : Any){
-        
+        if let navController = self.navigationController {
+            navController.popViewController(animated: true)
+        }
+    
     }
 
     
